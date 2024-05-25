@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .prevGuess{
+            background-color: #3C3C3B;
+        }
+        #title{
+            position: relative;
+            
+
+        }
+        body{
+            background-color: grey;
+        }
+        #GameArea {
+             display: flex;
+            justify-content: center;
+             align-items: center;
+             margin-top: 10%;
+             
+            
+
+        }
+        #inner{
+            border: 2px solid green;
+            width: 80vw;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #50514F;
+        }
+        #GuessPlace{
+            height: 30px;
+            border-radius: 10px;
+            border: 2px solid black;
+            box-shadow: inset 3px;
+            width: 250px;
+        }
+        .button{
+            height: 30px;
+            border-radius: 10px;
+            background-color: green;
+            border: pink 1px solid;
+        }
+
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Number Guessing Game</h1>
+    <div id="GameArea">
+        
+        <div id="inner">
+            
+            <form id="form">
+                <h1>Guess The Correct number Between 1 and 100</h1>
+                <input id="GuessPlace" type="text" placeholder="Enter your number here">
+                <button class="button" id="submit">Guess</button>
+                <h2><span  id="guide"></span></h2>
+                
+                <h3>previous guesses are: <span style="font-size: 15px;" class="prevGuess"></span></h3>
+                <h4>Remaining guess count: <span class="count">10</span></h4>
+                <button class="button newG">New Game</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
